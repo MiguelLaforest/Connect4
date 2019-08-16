@@ -1,11 +1,11 @@
 import Board from "./scripts/components/Board";
 
-const board = new Board();
-const winnerDisplay = document.getElementById("winner");
-console.log("winnerDisplay:", winnerDisplay);
+new Board();
+const winnerDisplay = document.getElementById("winner-display");
+
 if (winnerDisplay) {
   winnerDisplay.addEventListener("click", () => {
-    board.hideScoreBoard();
+    winnerDisplay.style.display = "none";
     new Board();
   });
 }

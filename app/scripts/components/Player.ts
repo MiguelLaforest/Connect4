@@ -11,7 +11,6 @@ export default class Player {
   }
 
   win() {
-    console.log("this.score:", this.score);
     this.score++;
   }
 
